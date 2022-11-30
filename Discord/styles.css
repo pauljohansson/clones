@@ -3,9 +3,19 @@
   padding: 0;
 }
 
+:root {
+  --font-primary: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "ABC Ginto Normal", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-headline: "ABC Ginto Nord", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
 .app-container {
   display: flex;
-  color: hsl(138, 12%, 84%);
+  color: white;
+  width: 100%;
+  height: 100%;
 }
 
 .main-nav-container {
@@ -24,4 +34,80 @@
   background-color: hsl(220, 8%, 23%);
   width: 83.75%;
   height: 100vh;
+}
+
+.header {
+  font-family: var(--font-display);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 30%);
+}
+
+.channel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.channel-header div {
+  display: flex;
+  align-items: center;
+}
+
+.channel-header h1,
+svg {
+  margin-left: 8px;
+}
+
+.server-name {
+  font-size: 1em;
+  padding: 15px;
+}
+
+.channel-name {
+  font-size: 1.0625em;
+}
+
+.toolbar {
+  margin-top: 4px;
+}
+
+.toolbar li {
+  display: inline;
+  margin-left: 2px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.toolbar div {
+  cursor: text;
+}
+
+.toolbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  background-color: hsla(0, 0%, 0%, 40%);
+  height: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 6px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+
+#search {
+  background-color: hsla(0, 0%, 0%, 0%);
+  border: none;
+  outline: none;
+  color: white;
+  width: 110px;
+  transition: width 0.3s;
+}
+
+#search:focus {
+  width: 200px;
 }
