@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  color: hsl(138, 12%, 84%);
+}
+
+.main-nav-container {
+  background-color: hsl(216, 7%, 14%);
+  width: 3.75%;
+  height: 100vh;
+}
+
+.server-container {
+  background-color: hsl(223, 7%, 20%);
+  width: 12.5%;
+  height: 100vh;
+}
+
+.channel-container {
+  background-color: hsl(220, 8%, 23%);
+  width: 83.75%;
+  height: 100vh;
+}
