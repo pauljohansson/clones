@@ -23,7 +23,16 @@
 .main-nav-section {
   background-color: hsl(216, 7%, 14%);
   width: 72px;
+  display: flex;
   flex-shrink: 0;
+}
+
+.nav-server {
+  margin: 0 auto;
+}
+
+.nav-server ul {
+  list-style: none;
 }
 
 .server-section {
@@ -55,17 +64,19 @@
   align-items: center;
 }
 
-.channel-header h1,
-svg {
+.channel-header svg {
   margin-left: 8px;
 }
 
 .server-name {
+  font-weight: normal;
   font-size: 1em;
   padding: 15px;
 }
 
 .channel-name {
+  margin-left: 8px;
+  font-weight: normal;
   font-size: 1.0625em;
 }
 
@@ -112,4 +123,47 @@ svg {
 
 #search:focus {
   width: 200px;
+}
+
+.server-icon {
+  margin-top: 8px;
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.separator {
+  background-color: hsl(218, 7%, 23%);
+  margin: 8px auto;
+  width: 32px;
+  height: 2px;
+  text-align: center;
+  border-radius: 1px;
+}
+
+.dm {
+  margin-top: 12px;
+  background-color: hsl(218, 7%, 23%);
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dm svg {
+  margin: 0 auto;
+}
+
+.s1 {
+  background-image: url(images/d23iows-627142a5-5cad-4dc2-a96d-fae711310d3e.png);
+}
+
+.s2 {
+  background-image: url(images/_art_trade__cacti_by_legendarypixel_ddbf4px-fullview.png);
+}
+
+.s3 {
+  background-image: url(images/d4qb62b-a8131be1-05e0-4dd4-9b64-f33c3fab31c4.png);
 }
