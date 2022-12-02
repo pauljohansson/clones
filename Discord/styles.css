@@ -10,6 +10,7 @@
     sans-serif;
   --font-headline: "ABC Ginto Nord", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
+  --profile-hover-color: hsl(220, 7%, 17%);
 }
 
 .app-container {
@@ -36,6 +37,8 @@
 }
 
 .server-section {
+  display: flex;
+  flex-direction: column;
   background-color: hsl(223, 7%, 20%);
   width: 240px;
   flex-shrink: 0;
@@ -157,13 +160,99 @@
 }
 
 .s1 {
-  background-image: url(images/d23iows-627142a5-5cad-4dc2-a96d-fae711310d3e.png);
+  background-color: red;
 }
 
 .s2 {
-  background-image: url(images/_art_trade__cacti_by_legendarypixel_ddbf4px-fullview.png);
+  background-color: green;
 }
 
 .s3 {
-  background-image: url(images/d4qb62b-a8131be1-05e0-4dd4-9b64-f33c3fab31c4.png);
+  background-color: blue;
+}
+
+.channels {
+  flex-grow: 1;
+}
+
+.user-settings-container {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 53px;
+  align-self: flex-end;
+  background-color: hsl(220, 7%, 17%);
+}
+
+.user-container {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 6px;
+  padding: 5px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.user-container:hover {
+  --profile-hover-color: hsl(222, 7%, 27%);
+  background-color: var(--profile-hover-color);
+}
+
+.profile-picture {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-container {
+  position: absolute;
+  top: 55%;
+  right: -16%;
+  width: 18px;
+  height: 18px;
+  background-color: var(--profile-hover-color);
+  border-radius: 50%;
+}
+
+.status {
+  position: absolute;
+  background-color: hsl(128, 30%, 49%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 18%;
+  right: 29%;
+}
+
+.username {
+  margin-top: 1px;
+  font-family: var(--font-primary);
+  font-weight: bold;
+  font-size: 0.875em;
+}
+
+.uid {
+  font-family: var(--font-primary);
+  font-size: 0.75em;
+  font-weight: lighter;
+  color: hsl(216, 4%, 74%);
+}
+
+.user-tools-container {
+  display: flex;
+  margin: 0px 8px;
+}
+
+.user-tool {
+  cursor: pointer;
+  margin-bottom: 1px;
+  padding: 7px 6px 3px;
+  border-radius: 4px;
+}
+
+.user-tool:hover {
+  background-color: hsl(222, 7%, 27%);
 }
